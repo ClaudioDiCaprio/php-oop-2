@@ -38,6 +38,27 @@ class User{
     {
         $this->discount = $_discount;
     }
-//set properties
+//set properties end
+
+//get properties 
+    public function getName() 
+    {
+        return $this->name;
+    }
+    public function getSur()
+    {
+        return $this->sur;
+    }
+    public function getDiscount() 
+    {
+        return $this->discount;
+    }
+    public function getCreditCard() 
+    {
+        return $this->creditCard;
+    }
+
+//get properties end
+
 }
 ?>
