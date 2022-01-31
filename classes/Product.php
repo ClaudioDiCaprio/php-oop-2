@@ -40,6 +40,7 @@ class Product {
     {
         return $this->price;
     }
+    
 //get properties end
 
 }  

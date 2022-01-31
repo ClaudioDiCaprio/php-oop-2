@@ -9,7 +9,7 @@ $new_user = new User('Mace','Windu');
 
 $new_product = new Product('Single blade Lightsaber"Amethyst"',28000);
 
-$new_creditCard = new CreditCard(5333271098172363, 932, 24, 01);
+$new_creditCard = new CreditCard('5333271098172363', 932, 24, 01);
 
 $new_user->setCreditCard($new_creditCard);
 $new_user->gotItem($new_product);
@@ -28,5 +28,8 @@ $new_user->gotItem($new_product);
     <h2> Sales Report</h2>
     <p> <?php echo"Mister: {$new_user->getName()} {$new_user->getSur()}" ?> </p>
     <p>Purchased: <?php echo $new_product->getKind() ?> </p>
+    <p>Paid with: <?php echo "{$new_user->getCreditCard()->getCardNumber()} Credit Card." ?> </p>
+    <p>Priced: <?php echo "{$new_product->getPrice()} Republic's credits."?> </p>
+    <p>Jedi Discounted: <?php echo "{$new_user->getDiscountedP()} Republic's credits."?> </p>
 </body>
 </html>

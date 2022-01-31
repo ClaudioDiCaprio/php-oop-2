@@ -58,6 +58,12 @@ class User{
         return $this->creditCard;
     }
 
+    public function getDiscountedP() {
+        $NativePrice = $this->item->getPrice();
+        $discountedPrice = $NativePrice - ($NativePrice * 0.1);
+        return $discountedPrice;
+    }
+
 //get properties end
 
 }
