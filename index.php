@@ -26,7 +26,7 @@ $new_user->gotItem($new_product);
 </head>
 <body>
     <h2> Sales Report</h2>
-    <p> <?php echo"Mister:{$new_user->getName()} {$new_user->getSur()}"?></p>
-    <p>Pur</p>
+    <p> <?php echo"Mister: {$new_user->getName()} {$new_user->getSur()}" ?> </p>
+    <p>Purchased: <?php echo $new_product->getKind() ?> </p>
 </body>
 </html>

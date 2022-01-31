@@ -11,7 +11,7 @@ class User{
 //constructor
     function __construct($_name, $_sur)
     {
-        $this->firstname = $_name;
+        $this->name = $_name;
         $this->sur = $_sur;
     }
 
