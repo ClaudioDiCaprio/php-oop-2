@@ -35,6 +35,22 @@ class CreditCard{
 //set properties end
 
 //get properties 
+    public function getCardNumber()
+    {
+        return $this->cardNumber;
+    }
+    public function getCvv() 
+    {
+        return $this->cvv;
+    }
+    public function getExYear() 
+    {
+        return $this->exYear;
+    }
+    public function getExMonth() 
+    {
+        return $this->exMonth;
+    }
 
 //get properties end
 
