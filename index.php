@@ -7,7 +7,7 @@
 
 $new_user = new User('Mace','Windu');
 // var_dump($new_user);
-$new_product = new Product();
+$new_product = new Product('Single blade Lightsaber"Amethyst"',28000);
 
 $new_creditCard = new CreditCard();
 
